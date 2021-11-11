@@ -12,7 +12,7 @@ class _ContadorPageState extends State<ContadorPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("StateFull Widget")),
+        appBar: AppBar(title: Text("Contador")),
         body: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -27,26 +27,27 @@ class _ContadorPageState extends State<ContadorPage> {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         SizedBox(
-          width: 30,
+          width: 30.0,
         ),
         FloatingActionButton(
-            child: Icon(Icons.exposure_zero),
-            onPressed: () {
-              null;
-            }),
+            child: Icon(Icons.exposure_zero), onPressed: _reset),
         Expanded(child: SizedBox()),
-        FloatingActionButton(
-            child: Icon(Icons.remove),
-            onPressed: () {
-              null;
-            }),
+        FloatingActionButton(child: Icon(Icons.remove), onPressed: _sustraer),
         SizedBox(width: 5.0),
-        FloatingActionButton(
-            child: Icon(Icons.add),
-            onPressed: () {
-              null;
-            })
+        FloatingActionButton(child: Icon(Icons.add), onPressed: _agregar)
       ],
     );
+  }
+
+  void _agregar() {
+    setState(() => _conteo++);
+  }
+
+  void _sustraer() {
+    setState(() => _conteo--);
+  }
+
+  void _reset() {
+    setState(() => _conteo = 0);
   }
 }

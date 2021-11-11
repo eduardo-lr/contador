@@ -1,16 +1,7 @@
-# contador
+# Apicación Móvil: Contador
 
-A new Flutter project.
+Esta aplicación implementa un contador en el cuál se puede sumar y restar una unidad y regresar a cero el estado del contador. La aplicación usa el lenguaje <a href="">Dart</a> y fue desarrollada usando el framework <a href="">Flutter</a>. A continuación se muestra la pantalla de la aplicación:
 
-## Getting Started
+<img src="app.png" alt="contador">
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La aplicación fue desarrollada como parte del curso <a href="https://www.udemy.com/course/flutter-primeros-pasos/">Flutter: Una introducción al SDK de Google</a>.

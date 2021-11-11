@@ -6,17 +6,19 @@ class HomePage extends StatelessWidget {
     final estiloTexto = TextStyle(fontSize: 25);
 
     return Scaffold(
-      appBar: AppBar(title: Text("Titulo")),
-      body: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Text("Numero de clicks:", style: estiloTexto),
-        Text("0", style: estiloTexto)
-      ])),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            print("Mensaje de prueba");
-          },
-          child: Icon(Icons.add)),
-    );
+        appBar: AppBar(title: Text("Titulo")),
+        body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+              Text("Numero de clicks:", style: estiloTexto),
+              Text("0", style: estiloTexto)
+            ])),
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              print("Mensaje de prueba");
+            },
+            child: Icon(Icons.add)),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat);
   }
 }

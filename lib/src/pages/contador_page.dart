@@ -19,12 +19,34 @@ class _ContadorPageState extends State<ContadorPage> {
           Text("Numero de clicks:", style: _estiloTexto),
           Text("$_conteo", style: _estiloTexto)
         ])),
-        floatingActionButton: FloatingActionButton(
+        floatingActionButton: _crearBotones());
+  }
+
+  Widget _crearBotones() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        SizedBox(
+          width: 30,
+        ),
+        FloatingActionButton(
+            child: Icon(Icons.exposure_zero),
             onPressed: () {
-              _conteo++;
-              setState(() {});
-            },
-            child: Icon(Icons.add)),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat);
+              null;
+            }),
+        Expanded(child: SizedBox()),
+        FloatingActionButton(
+            child: Icon(Icons.remove),
+            onPressed: () {
+              null;
+            }),
+        SizedBox(width: 5.0),
+        FloatingActionButton(
+            child: Icon(Icons.add),
+            onPressed: () {
+              null;
+            })
+      ],
+    );
   }
 }
